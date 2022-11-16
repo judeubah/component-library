@@ -1,0 +1,32 @@
+@import '../../Styling/BRAND.scss';
+.nav-header{
+    width: $section_standard_width;
+    display: flex;
+    align-items: center;
+}
+.nav-bar{
+    background-color: $main-accent;
+    width: 100%;
+    position: sticky;
+    top:0;
+    display: flex;
+    padding: 1.5rem 0;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.nav__logo-img{
+    width: 13rem;
+
+}
+
+.nav__link{
+    color: $text__pale;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0 .5rem;
+}
+
+.nav__links{
+    padding: 0 2rem;
+}

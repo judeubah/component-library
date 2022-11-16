@@ -1,0 +1,13 @@
+$main-accent: #0071bc;
+$main-accent__light: #29abe2;
+
+$text__dark: #2b2d42;
+$text__light: #5d6b83;
+$text__pale: #f4f4f4;
+
+
+$section_standard_width: 60%;
+
+@mixin section_title {
+    color: $main-accent;
+}

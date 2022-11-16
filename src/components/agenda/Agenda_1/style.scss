@@ -1,0 +1,68 @@
+@import '../../../Styling/BRAND.scss';
+.agenda__btn_primary{
+    color: $text__pale;
+    background-color: $main-accent;
+    transition: all 0.3s ease;
+    border-radius: 1rem;
+    padding: 0.35rem 0;
+    text-decoration: none;
+    font-weight: 600;
+    height: fit-content;
+    min-width: 9rem;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 0 0 2rem;
+
+    &:hover{
+        background-color: $main-accent__light;
+        color: $main-accent;
+        cursor: pointer;
+    }
+}
+
+.agenda-item{
+    display: flex;
+    padding: 2rem 1rem;
+    flex-direction: column;
+}
+
+.agenda-item_primary{
+    background-color: $text__pale;
+}
+.agenda-item_secondary{
+    background-color: #e7eaee;
+}
+
+.agenda__title{
+    font-weight: 500;
+    margin: 0 0 1rem;
+    color: $text__dark;
+}
+
+.agenda__subtitle{
+    font-weight: 900;
+    font-size: 0.75rem;
+    margin: 0 0 1rem;
+    color: $text__light;
+}
+
+
+
+.agenda__description{
+    font-size: 0.75rem;
+    margin: 0;
+    font-weight: 600;
+    line-height: 165%;
+    color: $text__light;
+}
+
+@media screen and (min-width: 768px) {
+    .agenda-item{
+        flex-direction: row;
+    }
+    .agenda__btn_primary{
+        align-self: flex-start;
+        margin: 0 1rem 0 0 ;
+    }
+}

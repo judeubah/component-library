@@ -1,0 +1,185 @@
+@import '../../Styling/BRAND.scss';
+.holding-page{
+    width: 100%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.holding-page__cover{
+    position: absolute;
+    background-color: rgba($color: $main-accent, $alpha: 0.8);
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.holding-page__content{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: space-between;
+
+}
+
+.holding-page__footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.holding-page__logo{
+    margin: 1rem 0 0;
+    width: 75%;
+
+    @media screen and (min-width: 700px) {
+        width: 40%;
+    }
+    @media screen and (min-width: 950px) {
+        width: 30%;
+    }
+}
+
+.holding-page__text{
+    color: $text__pale;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.25rem;
+    align-items: center;
+    @media screen and (min-width: 700px) {
+        width: 50%;
+    }
+}
+
+.holding-page__greeting{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+
+    @media screen and (min-width: 700px) {
+        font-size: 1.75rem;
+    }
+    @media screen and (min-width: 1300px) {
+        font-size: 2.5rem;
+    }
+}
+.holding-page__location-info{
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 1rem 0;
+    @media screen and (min-width: 700px) {
+        font-size: 1rem;
+    }
+    @media screen and (min-width: 1300px) {
+        font-size: 1.5rem;
+    }
+}
+.holding-page__paragraph{
+    margin: 0 0 0.5rem;
+    font-size: 0.75rem;
+
+    @media screen and (min-width: 700px) {
+        font-size: 1rem;
+    }
+    @media screen and (min-width: 1300px) {
+        font-size: 1.5rem;
+    }
+}
+
+.holding-page__contact{
+    background-color: $text__pale;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+.holding-page__paragraph_dark{
+    margin: 0 0 0.5rem;
+    color: $text__dark
+}
+.holding-page__contact-icons{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 1.5rem
+}
+.holding-page__icons{
+    font-size: 1rem;
+    color: $text__pale;
+    background-color: $main-accent;
+    border-radius: 100%;
+    padding: 1rem;
+
+    @media screen and (min-width: 700px) {
+        padding: 1.5rem;
+        font-size: 1.25rem;
+    }
+    @media screen and (min-width: 1300px) {
+        padding: 2.5rem;
+        font-size: 1.75rem;
+    }
+}
+
+.holding-page__copyright{
+    background-color: $text__dark;
+    width: 100%;
+    color: $text__pale;
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    font-size: 0.5rem;
+    justify-content: center;
+}
+// .holding-page__copyright-icon{
+// }
+
+.holding-page__ctas{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @media screen and (min-width: 700px) {
+        flex-direction: row;
+        justify-content: center;
+    }
+    @media screen and (min-width: 1000px) {
+        width: 35%;
+    }
+    @media screen and (min-width: 1300px) {
+        width: 25%;
+    }
+}
+.holding-page__cta{
+    border-width: 0.35rem;
+    padding: 0.5rem 1rem;
+    border-style: solid;
+    font-size: 1.25rem;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    @media screen and (min-width: 700px) {
+        margin: 0 1rem 0 0;
+    }
+}
+.holding-page__cta__primary{
+    border-color: $main-accent__light;
+    color: $text__pale;
+}
+.holding-page__cta__secondary{
+    color: $text__dark;
+    border-color: $text__pale;
+}
